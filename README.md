@@ -3,34 +3,29 @@ This library is not mine, it is one that I found in stackoverflow but it is not 
 
 
 How To Use:
-    - `import`
-    - `Json Data`
-    - `Send Data in string`
-    - `Download`
+```javascript
+import myExcelXML from './jsonToExcel'
 
-    ```javascript
-    import myExcelXML from './jsonToExcel'
+let data = [
+    {       
+        'item': 1,
+        'description': 1
+    },
+    {       
+        'item': 1,
+        'description': 1
+    },
+    {       
+        'item': 1,
+        'description': 1
+    },
+    {       
+        'item': 1,
+        'description': 1
+    },
+]
 
-    let data = [
-        {       
-            'item': 1,
-            'description': 1
-        },
-        {       
-            'item': 1,
-            'description': 1
-        },
-        {       
-            'item': 1,
-            'description': 1
-        },
-        {       
-            'item': 1,
-            'description': 1
-        },
-    ]
-
-    var myTestXML = new myExcelXML(JSON.stringify(data));
-    myTestXML.downLoad();
-    ```
+var myTestXML = new myExcelXML(JSON.stringify(data));
+myTestXML.downLoad();
+```
     
